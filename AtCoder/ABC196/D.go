@@ -69,7 +69,7 @@ func search(grid [][]int, i int, j int, t1 int) int {
 		// その他（縦方向も横方向もあり得る）
 		if grid[i][j] == 1 {
 			// そのマスがダメ
-			grid_n := make([][]int, cap(grid))
+			grid_n := make([][]int, h)
 			for i := range grid {
 				grid_n[i] = make([]int, w)
 				copy(grid_n[i], grid[i])
